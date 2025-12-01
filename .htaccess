@@ -1,0 +1,31 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Set base directory
+RewriteBase /pinepix-eims/
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^(config|\.env|\.git)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Route API requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/(.*)$ public/api/$1 [L,QSA]
+
+# Service Worker - must be served from root with correct MIME type
+<FilesMatch "sw\.js$">
+    Header set Content-Type "application/javascript"
+    Header set Service-Worker-Allowed "/"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+</FilesMatch>
+
+# Route public files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L,QSA]

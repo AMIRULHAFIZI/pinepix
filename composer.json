@@ -1,0 +1,21 @@
+{
+    "name": "pinepix/eims",
+    "description": "Pineapple Entrepreneur Information Management System",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "PinePix\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "echo 'No tests configured'"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
+

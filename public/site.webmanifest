@@ -1,0 +1,62 @@
+{
+  "name": "PinePix - Pineapple Entrepreneur Information Management System",
+  "short_name": "PinePix",
+  "description": "Comprehensive system for managing pineapple entrepreneurs, farms, shops, and announcements",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#f59e0b",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "productivity", "agriculture"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Go to dashboard",
+      "url": "/dashboard.php",
+      "icons": [{ "src": "favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Farms",
+      "short_name": "Farms",
+      "description": "Manage farms",
+      "url": "/farm.php",
+      "icons": [{ "src": "favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Shops",
+      "short_name": "Shops",
+      "description": "Manage shops",
+      "url": "/shop.php",
+      "icons": [{ "src": "favicon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}

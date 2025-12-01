@@ -1,0 +1,41 @@
+# Uploads
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Config (if using environment variables)
+config/local.php
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Composer (if used later)
+vendor/
+composer.lock
+
+# Node modules (if used later)
+node_modules/
+package-lock.json
+
+# Temporary files
+*.tmp
+*.cache
+
+
+
+# Deployment files (optional - can be committed)
+# Procfile
+# render.yaml
+# .github/workflows/
