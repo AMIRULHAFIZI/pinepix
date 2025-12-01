@@ -4,7 +4,7 @@
 
 ### Pineapple Entrepreneur Information Management System
 
-![PinePix Logo](assets/images/logoblack.png)
+![PinePix Logo](assets/images/logowhite.png)
 
 **Connecting pineapple entrepreneurs, farms, and businesses in one unified platform**
 
