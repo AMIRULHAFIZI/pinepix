@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Set base directory
-RewriteBase /pinepix-eims/
+RewriteBase /pinepix/
 
 # Prevent directory listing
 Options -Indexes

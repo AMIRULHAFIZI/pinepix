@@ -32,7 +32,7 @@
 
 3. Verify BASE_URL matches your setup:
    ```php
-   define('BASE_URL', 'http://localhost/pinepix-eims/');
+   define('BASE_URL', 'http://localhost/pinepix/');
    ```
 
 ### Step 3: File Permissions
@@ -49,7 +49,7 @@ chmod -R 755 public/uploads
 
 ### Step 4: Access the System
 
-1. Open browser: `http://localhost/pinepix-eims/`
+1. Open browser: `http://localhost/pinepix/`
 2. Default admin login:
    - Email: `admin@pinepix.com`
    - Password: `admin123`
@@ -91,7 +91,7 @@ Laragon users:
 - Database password is usually `admin` (already configured)
 - PHP version should be 8.0+
 - Apache should have mod_rewrite enabled
-- Access via: `http://localhost/pinepix-eims/`
+- Access via: `http://localhost/pinepix/`
 
 ## Production Deployment
 

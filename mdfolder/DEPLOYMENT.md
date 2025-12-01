@@ -6,7 +6,7 @@
 
 ## ✅ Free Hosting Solutions for PHP + MySQL
 
-Here are the best free hosting options for your PinePix EIMS application:
+Here are the best free hosting options for your PinePix application:
 
 ---
 
@@ -142,7 +142,7 @@ If you want to host PHP separately and use a free MySQL service:
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/pinepix-eims.git
+   git remote add origin https://github.com/yourusername/pinepix.git
    git push -u origin main
    ```
 
@@ -154,7 +154,7 @@ If you want to host PHP separately and use a free MySQL service:
    - Click "New" → "Web Service"
    - Connect your GitHub repository
    - Settings:
-     - **Name:** pinepix-eims
+     - **Name:** pinepix
      - **Environment:** PHP
      - **Build Command:** (leave empty)
      - **Start Command:** `php -S 0.0.0.0:8000 -t public`

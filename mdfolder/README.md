@@ -66,7 +66,7 @@ A comprehensive web-based system for managing pineapple entrepreneurs, farms, sh
 
 1. **Clone or download the project**
    ```bash
-   cd pinepix-eims
+   cd pinepix
    ```
 
 2. **Configure Database**
@@ -90,7 +90,7 @@ A comprehensive web-based system for managing pineapple entrepreneurs, farms, sh
    - Edit `config/database.php`
    - Update BASE_URL to match your local setup:
    ```php
-   define('BASE_URL', 'http://localhost/pinepix-eims/');
+   define('BASE_URL', 'http://localhost/pinepix/');
    ```
 
 5. **Create Upload Directories**
@@ -130,7 +130,7 @@ After installation, use these credentials:
 ## Project Structure
 
 ```
-pinepix-eims/
+pinepix/
 ├── assets/
 │   ├── css/
 │   │   ├── auth.css

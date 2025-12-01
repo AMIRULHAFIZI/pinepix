@@ -78,7 +78,7 @@ These can also be set via Admin Panel > Settings.
 ## File Structure
 
 ```
-pinepix-eims/
+pinepix/
 ├── .env              # Your actual configuration (NOT in Git)
 ├── .env.example      # Template file (safe to commit)
 ├── config/

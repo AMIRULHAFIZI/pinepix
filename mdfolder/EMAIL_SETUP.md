@@ -14,7 +14,7 @@ To enable email sending for password reset functionality, you need to configure 
 
 1. Go to: https://myaccount.google.com/apppasswords
 2. Select **App**: Choose "Mail"
-3. Select **Device**: Choose "Other (Custom name)" and type "PinePix EIMS"
+3. Select **Device**: Choose "Other (Custom name)" and type "PinePix"
 4. Click **Generate**
 5. Copy the 16-character password (it will look like: `abcd efgh ijkl mnop`)
 
