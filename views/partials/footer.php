@@ -1,9 +1,6 @@
-    </div> <!-- End main-content-wrapper -->
-    
-    <footer class="bg-white border-t-2 border-gray-200 mt-auto">
+</div> <footer class="bg-white border-t-2 border-gray-200 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-                <!-- Brand Section -->
                 <div class="col-span-1 sm:col-span-2 lg:col-span-2">
                     <div class="flex items-center mb-4">
                         <img src="<?= BASE_URL ?>assets/images/logoblack.png" alt="PinePix Logo" class="h-20 sm:h-24 object-contain">
@@ -30,7 +27,6 @@
                     </div>
                 </div>
                 
-                <!-- Quick Links -->
                 <div>
                     <h6 class="font-bold text-gray-900 mb-4 text-lg">Quick Links</h6>
                     <ul class="space-y-3">
@@ -45,7 +41,6 @@
                     </ul>
                 </div>
                 
-                <!-- Support -->
                 <div>
                     <h6 class="font-bold text-gray-900 mb-4 text-lg">Support</h6>
                     <ul class="space-y-3">              
@@ -68,7 +63,7 @@
             <div class="pt-6 border-t-2 border-gray-200">
                 <div class="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
                     <p class="text-sm text-gray-600">
-                        &copy; <?= date('Y') ?> PinePix. All rights reserved.
+                        © <?= date('Y') ?> PinePix. All rights reserved.
                     </p>
                     <p class="text-sm text-gray-600 flex items-center">
                         Made with <i class="fas fa-heart text-red-400 mx-2 animate-pulse"></i> for Pineapple Entrepreneurs
@@ -78,12 +73,9 @@
         </div>
     </footer>
     
-    <!-- Floating Chatbot Widget -->
     <div id="chatbotWidget" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50" style="position: fixed;">
         <div style="position: relative;">
-            <!-- Chat Box -->
             <div id="chatbotBox" class="absolute bottom-16 right-0 w-[calc(100vw-3rem)] sm:w-80 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 transform transition-all duration-300" style="display: none; position: absolute;">
-            <!-- Header -->
             <div class="bg-primary-600 text-white p-4 rounded-t-2xl flex items-center justify-between">
                 <div class="flex items-center">
                     <i class="fas fa-robot text-xl mr-2"></i>
@@ -97,7 +89,6 @@
                 </button>
             </div>
             
-            <!-- Mode Toggle -->
             <div class="px-4 pt-3 pb-2 border-b border-gray-200">
                 <div class="inline-flex rounded-lg border border-gray-300 overflow-hidden" role="group">
                     <input type="radio" class="hidden peer/faq" name="chatbotMode" id="chatbotModeFAQ" value="faq" checked>
@@ -111,7 +102,6 @@
                 </div>
             </div>
             
-            <!-- Chat Messages Container -->
             <div id="chatbotContainer" class="flex-1 overflow-y-auto p-4 bg-gray-50 space-y-4">
                 <div id="chatbotMessages"></div>
                 <div id="chatbotTyping" class="hidden">
@@ -125,7 +115,6 @@
                 </div>
             </div>
             
-            <!-- Input Area -->
             <div class="p-4 border-t border-gray-200 bg-white rounded-b-2xl">
                 <div class="flex gap-2">
                     <input type="text" id="chatbotInput" placeholder="Type your message..." 
@@ -137,7 +126,6 @@
             </div>
             </div>
             
-            <!-- Floating Button -->
             <button id="chatbotToggle" class="relative w-14 h-14 bg-primary-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group">
                 <i class="fas fa-comments text-xl group-hover:scale-110 transition-transform"></i>
                 <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white animate-pulse"></span>
@@ -145,13 +133,10 @@
         </div>
     </div>
     
-    <!-- Floating Scroll to Top Button -->
     <button id="scrollToTop" class="fixed bottom-6 left-6 sm:bottom-8 sm:left-8 w-12 h-12 bg-primary-400 text-white rounded-full shadow-lg hover:bg-primary-500 hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 invisible z-40 flex items-center justify-center group" aria-label="Scroll to top">
         <i class="fas fa-arrow-up text-lg group-hover:-translate-y-1 transition-transform"></i>
     </button>
     
-    <!-- Scripts -->
-    <!-- Note: jQuery, DataTables, Leaflet, ApexCharts, and SweetAlert2 are loaded in header.php -->
     <script>
         // Toast notification helper using SweetAlert2
         window.toast = {
@@ -228,8 +213,6 @@
         // Ensure Swal is available globally
         window.Swal = Swal;
     </script>
-    <!-- Leaflet and ApexCharts are already loaded in header.php -->
-    
     <?php if (isset($additionalJS)): ?>
         <?php foreach ($additionalJS as $js): ?>
             <script src="<?= $js ?>"></script>
@@ -238,7 +221,6 @@
     
     <script src="<?= BASE_URL ?>assets/js/main.js"></script>
     
-    <!-- Scroll to Top Functionality -->
     <script>
         // Scroll to top button
         const scrollToTopBtn = document.getElementById('scrollToTop');
@@ -263,7 +245,6 @@
         });
     </script>
     
-    <!-- Chatbot Widget Script -->
     <script>
         (function() {
             const chatbotWidget = document.getElementById('chatbotWidget');
@@ -402,7 +383,6 @@
         })();
     </script>
     
-    <!-- PWA Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
@@ -443,9 +423,6 @@
         window.addEventListener('beforeinstallprompt', function(e) {
             e.preventDefault();
             deferredPrompt = e;
-            
-            // Show custom install button (optional)
-            // You can add a custom install button to your UI here
             console.log('[PWA] Install prompt available');
         });
         
@@ -463,6 +440,118 @@
                 });
             }
         };
+    </script>
+    
+    <script>
+    let routingControl = null;
+
+    function generateRoute() {
+        // 1. Get all checked farms
+        let selectedFarms = document.querySelectorAll('.farm-selector:checked');
+        
+        if (selectedFarms.length === 0) {
+            Swal.fire({ icon: 'warning', title: 'No Farms Selected', text: 'Please select at least one farm to visit!' });
+            return;
+        }
+
+        // Check if map is initialized (It must be initialized in index.php as 'map')
+        if (typeof map === 'undefined') {
+            console.error("Map variable not found. Make sure map is initialized as 'var map = ...'");
+            return;
+        }
+
+        Swal.fire({
+            title: 'Finding Location...',
+            text: 'Please allow GPS access to plan your route.',
+            didOpen: () => { Swal.showLoading(); }
+        });
+
+        // 2. Get User's Current Location
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                Swal.close();
+                
+                let userLat = position.coords.latitude;
+                let userLng = position.coords.longitude;
+                
+                // Define Waypoints: Start with User
+                let waypoints = [
+                    L.latLng(userLat, userLng)
+                ];
+
+                // Add selected farms
+                selectedFarms.forEach(function(checkbox) {
+                    let lat = parseFloat(checkbox.getAttribute('data-lat'));
+                    let lng = parseFloat(checkbox.getAttribute('data-lng'));
+                    if(lat && lng) {
+                        waypoints.push(L.latLng(lat, lng));
+                    }
+                });
+
+                // Remove old route
+                if (routingControl !== null) {
+                    map.removeControl(routingControl);
+                }
+
+                // Create Custom Icons
+                const createIcon = function(i, wp, nWps) {
+                    if (i === 0) {
+                        // Start Point (User)
+                        return L.divIcon({
+                            className: 'custom-div-icon',
+                            html: '<div style="background-color:blue; width:30px; height:30px; border-radius:50%; border:2px solid white; display:flex; justify-content:center; align-items:center; box-shadow:0 2px 5px rgba(0,0,0,0.3);"><i class="fas fa-user text-white"></i></div>',
+                            iconSize: [30, 30],
+                            iconAnchor: [15, 15]
+                        });
+                    } else {
+                        // Destination (Farm)
+                        return L.divIcon({
+                            className: 'custom-div-icon',
+                            html: '<div style="background-color:#f59e0b; width:30px; height:30px; border-radius:50%; border:2px solid white; display:flex; justify-content:center; align-items:center; box-shadow:0 2px 5px rgba(0,0,0,0.3);"><i class="fas fa-leaf text-white"></i></div>',
+                            iconSize: [30, 30],
+                            iconAnchor: [15, 15]
+                        });
+                    }
+                };
+
+                // 3. Draw Route
+                routingControl = L.Routing.control({
+                    waypoints: waypoints,
+                    routeWhileDragging: false,
+                    createMarker: createIcon,
+                    lineOptions: {
+                        styles: [{color: '#d97706', opacity: 0.8, weight: 6}]
+                    },
+                    show: true, // Show turn-by-turn directions
+                    addWaypoints: false,
+                    draggableWaypoints: false,
+                    fitSelectedRoutes: true
+                }).addTo(map);
+
+                Swal.fire({ icon: 'success', title: 'Route Generated!', timer: 2000, showConfirmButton: false });
+
+            }, function(error) {
+                Swal.fire({ icon: 'error', title: 'GPS Error', text: 'Could not get your location. ' + error.message });
+            });
+        } else {
+            Swal.fire({ icon: 'error', title: 'Error', text: 'Geolocation is not supported by this browser.' });
+        }
+    }
+
+    function clearRoute() {
+        if (routingControl !== null && typeof map !== 'undefined') {
+            map.removeControl(routingControl);
+            routingControl = null;
+            
+            // Uncheck all boxes
+            document.querySelectorAll('.farm-selector').forEach(el => el.checked = false);
+            
+            // Assuming the toast helper from footer is available
+            if (window.toast) {
+                window.toast.info('Route cleared');
+            }
+        }
+    }
     </script>
 </body>
 </html>
